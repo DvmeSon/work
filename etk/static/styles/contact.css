@@ -1,0 +1,105 @@
+.mapouter {
+  margin: 1rem auto 3rem auto !important;
+}
+
+.contact-container {
+  background: #fff;
+  padding: 40px 20rem;
+}
+
+.contact-upper p {
+  margin: 1.6rem 0;
+  font-size: 20px;
+}
+
+.contact-icons {
+  margin: 2rem 0;
+}
+.contact-icons span {
+  display: inline-flex;
+}
+.contact-icons i {
+  margin-right: 20px;
+}
+.contact-icons h5 {
+  font-weight: bold;
+  margin-top: 5px;
+}
+.contact-icons p {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.map-heading {
+  padding-top: 2rem;
+}
+.map-heading h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.border {
+  border-left: 6px solid black;
+  height: 80px;
+}
+
+@media screen and (max-width: 1600px) {
+  .contact-container {
+    padding: 40px 8rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contact-icons p {
+    font-size: 20px;
+  }
+
+  .border {
+    display: none;
+  }
+
+  .contact-container {
+    padding: 0 16rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  iframe {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contact-container {
+    padding: 0 10rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-container {
+    padding: 0 2rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact-icons p {
+    font-size: 18px;
+  }
+  .contact-icons h5 {
+    font-size: 18px;
+  }
+  .contact-icons span {
+    display: inline-block;
+  }
+  .contact-icons .fix {
+    margin-bottom: 1rem;
+  }
+
+  .contact-upper p {
+    font-size: 18px;
+  }
+  .contact-upper h1 {
+    font-size: 36px;
+  }
+
+  .map-heading h2 {
+    font-size: 36px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

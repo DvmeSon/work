@@ -1,0 +1,147 @@
+ .dotation-begin {
+    text-align: left;
+    margin-top: -60px;
+    .dotation-heading h1 {
+        font-size: 100px;
+        font-weight: bold;
+    }
+    .dota-img {
+        z-index: -1;
+        img {
+            width: 300px;
+            height: 225px;
+            margin-left: 20px;
+        }
+    }
+}
+.dotat-content {
+    margin: 1.6rem 0 !important;
+    p {
+        font-size: 28px;
+    }
+}
+.second-row {
+    height: 500px;
+    text-align: right;
+    .absolute-img {
+        position: relative;
+        z-index: -99;
+        top: -2%;
+        img {
+            height: 500px;
+            width: 500px;
+        }
+    }
+    h3 {
+        font-size: 27px;
+    }
+}
+.contact-bar {
+    background-image: url(../img/telephone-586266_1920.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    padding: 0;
+    opacity: .9;
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-shadow: 2px 1px 9px white;
+    }
+    .btn-info {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .second-row .absolute-img {
+        left: -12%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .dotation-heading h1 {
+        font-size: 80px !important;
+    }
+    .dota-img img {
+        width: 300px;
+        height: 225px;
+        margin-left: 100px !important;
+    }
+    .dotat-content p {
+       font-size: 24px;
+    }
+    .second-row {
+    height: 400px;
+            .absolute-img {
+            left: -15%;
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+    .second-caption h3 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .second-row {
+        margin-right: -90px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .dotation-heading h1 {
+        font-size: 65px !important;
+    }
+    .dotat-content p {
+       font-size: 20px;
+    }
+    .second-row {
+        height: auto;
+    }
+    .contact-bar h1 {
+        font-size: 40px;
+    }
+    .second-row {
+        margin: auto !important;
+        .absolute-img {
+            margin-top: -100px;
+            left: -30%;
+        }
+        .second-caption {
+            padding: 1.4rem 0;
+            margin-top: -50px;
+            h3 {
+                font-size: 22px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dotation-heading h1 {
+        font-size: 50px !important;
+    }
+    .dotat-content p {
+       font-size: 18px;
+    }
+    .contact-bar h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+    .contact-bar .btn-info {
+        font-size: 18px !important;
+    }
+    .second-row .second-caption h3 {
+        font-size: 20px !important;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,29 @@
+$etk-green: #968c00;
+
+body {
+    background: #fff;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Lato', ;
+}
+
+@import 'about.scss';
+@import 'footer.scss';
+@import 'index.scss';
+@import 'navbar.scss';
+@import 'offer.scss';
+@import 'dotation.scss';
+@import 'contact.scss';

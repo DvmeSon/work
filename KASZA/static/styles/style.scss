@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Spartan:400,700&display=swap&subset=latin-ext');
+
+/* variables */
+$lato: 'Lato', sans-serif;
+$spartan: 'Spartan', sans-serif;
+$whitey: #f0f0f0;
+$brown: rgb(136, 95, 57);
+$yellow: #836318;
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $lato;
+    background: linear-gradient(15deg, rgba(228,190,99,1) 0%, rgba(249,242,226,1) 50%, rgba(228,190,99,1) 100%); 
+}   
+
+.container {
+    max-width: 100%;
+}
+
+.content-container {
+    height: 100%;
+}
+
+.offset:before {
+    display: block;
+    content: "";
+    margin-top: -2rem;
+    height: 2rem;
+}
+
+.mb-10 {
+    margin-bottom: 20px
+}
+
+.btn {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    font-family: $spartan;
+}
+
+h2 {
+    font-family: $spartan;
+    font-size: 38px;
+}
+
+/* KONTAKT */
+.contact-container {
+    padding: 5% 8%;
+    height: 100%;
+    .headings {
+        margin-bottom: 50px;
+    }
+    .contact-form {
+       font-family: $spartan;
+    }
+    .contact-data {
+        .specifics {
+            margin: 20px 0 50px 0;
+            i {
+                margin-right: 10px;
+                color: $yellow;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .contact-container {
+        padding: 5% 2%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    p {
+        font-size: 16px !important;
+    }
+    .contact-form, .map {
+        text-align: center;
+    }
+    .map {
+      margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .offset:before {
+        margin-top: -.4rem;
+        height: .4rem;
+    }
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+        font-weight: bold !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-form {
+        .size {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@import 'navbar.scss';
+@import 'index.scss';
+@import 'offer.scss';
+@import 'footer.scss';

@@ -1,0 +1,123 @@
+.home-bg {
+    background-image: url(../img/mainBg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: $whitey;
+    height: 100vh;
+    .home-screen {   
+        width: 100%;
+        height: 100vh;
+        .home-caption {
+            .caption-heading {
+                font-size: 60px;
+                font-weight: bold;
+            }
+            .second-heading {
+                font-weight: bold;
+                font-size: 32px;
+                text-shadow: 1px 1px 20px black;
+            }
+        }
+        .fas {
+            font-size: 50px;
+            color: $whitey;
+            &:hover {
+                color: #c2c2c2;
+            }
+        }
+    }
+}
+
+/* O NAS */
+
+.box {
+    margin: 5% 10%;
+    box-shadow: 1px 1px 50px black;
+    border-radius: 60px;
+    z-index: 99;
+    background: #fff;
+    .heading {
+        margin-top: 60px;
+    }
+    .middle-box {
+        margin: 40px 100px;
+        img {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .box {
+        margin: 5% 10%;
+        .middle-box {
+            margin: 40px 50px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .home-bg .home-screen {
+        .fas {
+            font-size: 40px;
+            margin-top: -10px;
+        }
+        .home-caption {    
+            .caption-heading {
+                font-size: 42px;
+            }
+            .second-heading {
+                font-size: 20px;
+            }
+        }
+    }
+    .box .middle-box {
+        margin: 40px 10px !important;
+    }
+    .under-content p {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .home-bg .home-screen .home-caption {
+        .caption-heading {
+            font-size: 40px;
+        }
+        .second-heading {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .home-bg .home-screen .home-caption {
+        .caption-heading {
+            font-size: 30px;
+        }
+        .second-heading {
+            font-size: 16px;
+        }
+    }
+    .box {
+        margin: 5% 0;
+        .middle-box {
+            img {
+                margin: 0;
+                height: 250px !important;
+                width: 250px !important;
+            }
+            .p-resp {
+                padding: 0 !important;
+            }
+            p {
+                font-size: 14px !important;
+            }
+        }
+    }
+}

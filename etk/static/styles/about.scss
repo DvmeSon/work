@@ -1,0 +1,119 @@
+body {
+    font-family: 'Lato', sans-serif;
+    .jumbotron {
+        margin-bottom: 0 !important;
+    }
+    .mt-20 {
+        margin-top: 20px;
+    }
+    .breadcrumb {
+        padding: 10px 16px;
+        list-style: none;
+        background-color: #fff;;
+        li {
+            display: inline;
+            margin-right: 10px;
+            font-size: 20px;
+            &:before {
+                padding: 8px;
+                color: black;
+                content: "/\00a0";
+            }
+            a {
+                color: $etk-green;
+                text-decoration: none;
+                &:hover {
+                    color: #666666;
+                }
+            }
+        }
+    }
+    .page-top {
+        background-image: url(../img/solar-module.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        padding: 0;
+        opacity: .9;
+        .page-heading {
+            font-size: 60px;
+            color: #fff;
+            text-shadow: 2px 2px 1px black;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 5px;
+            margin-top: 3rem;
+        }
+    }
+
+    .content, .content-bottom {
+        font-size: 22px;
+    }
+    
+    .upper-row {
+        background: #efefef;
+        padding: 60px 200px;
+        margin-bottom: 60px;
+        img {
+            border-radius: 10px;
+        }
+    }
+    .bottom-row {
+        margin-bottom: 40px;
+        .content-bottom {
+            margin-bottom: 2rem;
+        }
+        img {
+            height: 300px;
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .upper-row {
+        padding: 40px 100px !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .upper-row {
+        padding: 40px 50px !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .content {
+        margin: 0 0 40px 0 !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content, .content-bottom {
+        font-size: 18px !important;
+    }
+    .upper-row img {
+        width: 400px;
+    }
+    .breadcrumb li {
+        font-size: 18px !important;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .content, .content-bottom {
+        font-size: 16px !important;
+    }
+    .upper-row {
+        margin-bottom: 30px !important;
+        img {
+            width: 250px;
+        }
+    }
+    .page-top .page-heading {
+        font-size: 48px !important;
+    }
+}
